@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Bezpieczeństwo hasła</title>
+</head>
+<body>
+    <header>
+        <p>Sprawdź, czy twoje hasło jest bezpieczne</p>
+    </header>
+    <main>
+        <div class="passwordInput">
+        <label for="passwordField">Wpisz hasło:</label>
+        <input type="password" id="passwordField" class="passwordField"/>
+        <input type="submit" value="Sprawdź" class="passwordSubmit button"/>
+        <p class="result"></p>
+        <p class="lengthCheck"></p>
+        <p class="caseVarietyCheck"></p>
+        <p class="specialCharactersCheck"></p>
+    </main>
+    <footer>
+        <img src="images/lock-icon.svg" alt="Ikona kłódki">
+        <p>Sprawdzenie jest wykonywane na twoim komputerze. Zobacz <a href="https://github.com/placeholder">źródło strony w GitHub.</a></p>
+    </footer>
+    <script src="passwordSecureCheck.js"></script>
+</body>
+</html>
