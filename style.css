@@ -48,6 +48,9 @@ input{
     background-color: #464646;
     transform: scale(1.05);
   }
+.button:active{
+    transform:scale(1.00)
+}
 
 footer{
     position: fixed;
