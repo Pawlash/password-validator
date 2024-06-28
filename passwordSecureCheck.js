@@ -69,7 +69,7 @@ function runTest() {
 
 passwordSubmit.addEventListener("click", runTest);
 
-// make enter working as a submit button
+// make enter work as a submit button
 passwordField.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
