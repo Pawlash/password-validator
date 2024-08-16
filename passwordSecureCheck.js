@@ -13,7 +13,7 @@ function checkLength() {
         lengthCheck.textContent = "";
         return true;
     } else {
-        lengthCheck.textContent = "- Twoje hasło jest za krótkie (min. 12 znaków!)";
+        lengthCheck.textContent = "- Your password is too short! (min. 12 characters)";
         return false;
     }
 }
@@ -35,7 +35,7 @@ function checkCaseVariety() {
         caseVarietyCheck.textContent = "";
         return true;
     } else {
-        caseVarietyCheck.textContent = "- Twoje hasło nie ma kombinacji wielkich i małych liter";
+        caseVarietyCheck.textContent = "- Your password does not have the combination of uppercase and lowercase letters";
         return false;
     }
 }
@@ -48,7 +48,7 @@ function checkSpecialCharacters() {
         specialCharactersCheck.textContent = "";
         return true;
     } else {
-        specialCharactersCheck.textContent = "- Twoje hasło nie posiada żadnego znaku specjalnego";
+        specialCharactersCheck.textContent = "- Your password does not contain any special character";
         return false;
     }
 }
@@ -59,10 +59,10 @@ function runTest() {
     const isSpecialCharactersOkay = checkSpecialCharacters();
 
     if (isLengthOkay && isCaseVarietyOkay && isSpecialCharactersOkay) {
-        result.textContent = "Twoje hasło jest bezpieczne!";
+        result.textContent = "Your password is secure!";
         result.style.color = "#90EE90";
     } else {
-        result.textContent = "Twoje hasło nie jest bezpieczne!";
+        result.textContent = "Your password is not secure.";
         result.style.color = "#CD5C5C";
     }
 }
